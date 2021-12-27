@@ -1,6 +1,4 @@
-include "../imgui"
-
-project "ImGui-SFML"
+project "imgui-sfml"
 	kind "StaticLib"
 	language "C++"
 
@@ -30,14 +28,7 @@ project "ImGui-SFML"
         "freetype.lib",
         "winmm.lib",
         "gdi32.lib",
-        "openal32.lib",
-        "flac.lib",
-        "vorbisenc.lib",
-        "vorbisfile.lib",
-        "vorbis.lib",
-        "ogg.lib",
-        "ws2_32.lib",
-        "ImGui"
+        "imgui"
     }
 
 	filter "system:windows"
@@ -60,9 +51,7 @@ project "ImGui-SFML"
 
 		links 
         { 
-            "sfml-audio-s-d.lib",
             "sfml-graphics-s-d.lib",
-            "sfml-network-s-d.lib",
             "sfml-system-s-d.lib",
             "sfml-window-s-d.lib",
         }
@@ -73,9 +62,7 @@ project "ImGui-SFML"
 
 		links 
         { 
-            "sfml-audio-s.lib",
             "sfml-graphics-s.lib",
-            "sfml-network-s.lib",
             "sfml-system-s.lib",
             "sfml-window-s.lib"
         }
